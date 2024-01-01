@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <link rel="stylesheet" href="login-style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 style="text-align: center; color: rgb(92, 1, 1); margin-bottom: 20px; font-size: 80px; font-family: cursive;">KIDZEE.COM</h1>
+        <div class="form signup">
+            <h2>Sign Up</h2>
+            <div class="inputBox">
+                <input type="text" id="username" required="required">
+                <i class="fa-regular fa-user"></i>
+                <span>Username</span>
+            </div>
+            <div class="inputBox">
+                <input type="text" id="email" required="required">
+                <i class="fa-regular fa-envelope"></i>
+                <span>Email Address</span>
+            </div>
+            <div class="inputBox">
+                <input type="password" id="password" required="required">
+                <i class="fa-solid fa-lock"></i>
+                <span>Create Password</span>
+            </div>
+            <div class="inputBox">
+                <input type="password" id="confirmPassword" required="required">
+                <i class="fa-solid fa-lock"></i>
+                <span>Confirm Password</span>
+            </div>
+            <div class="inputBox">
+                <input type="submit" value="Create Account" onclick="validateSignup()">
+            </div>
+        </div>
+
+        <!-- <div class="form signin">
+            <h2>Sign In</h2>
+            <div class="inputBox">
+                <input type="text" id="signinUsername" required="required">
+                <i class="fa-regular fa-user"></i>
+                <span>Username</span>
+            </div>
+            <div class="inputBox">
+                <input type="password" id="signinPassword" required="required">
+                <i class="fa-solid fa-lock"></i>
+                <span>Password</span>
+            </div>
+            <div class="inputBox">
+                <input type="submit" value="Login" onclick="showSuccessMessage('Login Successful!', true)">
+            </div>
+        </div>
+    </div> -->
+
+    <div id="overlay" class="overlay">
+        <div id="modal" class="modal">
+            <div id="success-icon"></div>
+            <div id="success-message"></div>
+            <div class="close" onclick="closeModal()">&times;</div>
+        </div>
+    </div>
+
+    <script>
+        function showSuccessMessage(message, success) {
+            var overlay = document.getElementById('overlay');
+            var successMessage = document.getElementById('success-message');
+            var successIcon = document.getElementById('success-icon');
+
+            successMessage.innerText = message;
+            successIcon.innerHTML = success ? '&#10004;' : '&#10060;';
+            successIcon.style.color = success ? 'green' : 'red';
+            overlay.style.display = 'flex';
+
+            setTimeout(function() {
+                overlay.style.display = 'none';
+                
+                if (success) {
+                    window.location.href = 'index.html';
+                }
+            }, 1000);
+        }
+
+        function closeModal() {
+            var overlay = document.getElementById('overlay');
+            overlay.style.display = 'none';
+        }
+
+        function validateSignup() {
+            var username = document.getElementById('username').value;
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('password').value;
+            var confirmPassword = document.getElementById('confirmPassword').value;
+
+            if (username === '' || email === '' || password === '' || confirmPassword === '') {
+                showSuccessMessage('Please fill in all fields.', false);
+                return false;
+            }
+
+            if (!isValidEmail(email)) {
+                showSuccessMessage('Invalid email address.', false);
+                return false;
+            }
+
+            if (password.length < 6) {
+                showSuccessMessage('Password must be at least 6 characters.', false);
+                return false;
+            }
+
+            if (password !== confirmPassword) {
+                showSuccessMessage('Passwords do not match.', false);
+                return false;
+            }
+
+            showSuccessMessage('Signup Successful!', true);
+            return true;
+        }
+
+        function isValidEmail(email) {
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailRegex.test(email);
+        }
+    </script>
+    <footer>
+        <p>&copy; 2024 Kidzee.com All rights reserved.</p>
+        <div class="footer-social">
+            <p>Follow Us On:</p>
+            <a target="_blank" href="https://www.facebook.com/" class="social-icon"><img src="C:\Users\Saikiran Shet\OneDrive\Documents\kidzee\facebook_icon-icons.com_53612 (1).ico" alt="Facebook" height="30px" width="30px"></a>
+            <a target="_blank" href="https://twitter.com/?lang=en" class="social-icon"><img src="C:\Users\Saikiran Shet\OneDrive\Documents\kidzee\twitter.png" alt="Twitter"height="30px" width="30px"></a>
+            <a target="_blank" href="https://www.instagram.com/" class="social-icon"><img src="C:\Users\Saikiran Shet\OneDrive\Documents\kidzee\3721672-instagram_108066.ico" alt="Instagram" height="30px" width="30px"></a>
+            <a target="_blank" href="https://www.youtube.com/channel/UCPmNjl80kfcwrrjSYtB9Rng" class="social-icon"><img src="C:\Users\Saikiran Shet\OneDrive\Documents\kidzee\youtube.png" alt="youtube" height="30px" width="30px"></a>
+        </div>
+    </footer>
+</body>
+</html>

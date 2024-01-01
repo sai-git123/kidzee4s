@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kidzee@Feedback</title>
+    <link rel="stylesheet" type="text/css" href="Feedback-style.css">
+  <link rel="icon" type="image/x-icon" href="C:\Users\Saikiran Shet\OneDrive\Documents\kidzee\kidzeecom-favicon-color.png">
+    
+</head>
+<body>
+    <header>
+    
+    
+        <a href="index.html"><img src="C:\Users\Saikiran Shet\OneDrive\Documents\kidzee\kidzeecom-high-resolution-logo-transparent.png" class="img1" height="220px" width="450px"></a>
+         
+         <nav>
+         <ul class="buttons">
+           <li><button class="a"><a href="home.html">Home</a></button></li>
+           <li><button class="b"><a target="_blank" href="Videos.html">Videos</a></button></li>
+           <li><button class="d"><a href="AboutUs.html">About Us</a></button></li>
+           <li><button class="e"><a target="_blank" href="Feedback.html">Feedback</a></button></li>
+         </ul>
+       </nav>
+ 
+     </header>
+     <div class="container">
+        <div class="form signup">
+            <h2>FEEDBACK</h2>
+            <div class="inputBox">
+                <input type="text" id="username" required="required">
+                <i class="fa-regular fa-user"></i>
+                <span>Parent Name</span>
+            </div>
+            <div class="inputBox">
+                <input type="text" id="email" required="required">
+                <i class="fa-regular fa-envelope"></i>
+                <span>Email Address</span>
+            </div>
+            <div class="inputBox">
+                <input type="text" id="childname" required="required">
+                <i class="fa-solid fa-user"></i>
+                <span>Child Name</span>
+            </div>
+            <div class="inputBox">
+                <input type="text" id="Childage" required="required">
+                <i class="fa-solid fa-user"></i>
+                <span>Child DOB (DD/MM/YYYY)</span>
+            </div>
+            <div class="inputBox">
+                <input type="text" id="username" required="required">
+                <i class="fa-regular fa-user"></i>
+                <span>Adress</span>
+            </div>
+            <div class="inputBox">
+                <input type="text" id="username" required="required" aria-rowcount="10">
+                <i class="fa-regular fa-user"></i>
+                <span>Feedback</span>
+            </div>
+            <div class="inputBox">
+                <i class="fa-solid fa-envelope"></i>
+                <input type="submit" value="Submit" onclick="showSuccessMessage('Thank you for your feedback', true)">
+            </div>
+        </div>
+    </div>
+
+    <div id="overlay" class="overlay">
+        <div id="modal" class="modal">
+            <div id="success-icon"></div>
+            <div id="success-message"></div>
+            <div class="close" onclick="closeModal()">&times;</div>
+        </div>
+    </div>
+
+    <script>
+        function showSuccessMessage(message, success) {
+            var overlay = document.getElementById('overlay');
+            var successMessage = document.getElementById('success-message');
+            var successIcon = document.getElementById('success-icon');
+
+            successMessage.innerText = message;
+            successIcon.innerHTML = success ? '&#10004;' : '&#10060;';
+            successIcon.style.color = success ? 'green' : 'red';
+            overlay.style.display = 'flex';
+
+            setTimeout(function() {
+                overlay.style.display = 'none';
+                
+                if (success) {
+                    window.location.href = 'index.html';
+                }
+            }, 1000);
+        }
+
+        function closeModal() {
+            var overlay = document.getElementById('overlay');
+            overlay.style.display = 'none';
+        }
+
+        function validateSignup() {
+            var username = document.getElementById('username').value;
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('password').value;
+            var confirmPassword = document.getElementById('confirmPassword').value;
+
+            if (username === '' || email === '' || password === '' || confirmPassword === '') {
+                showSuccessMessage('Please fill in all fields.', false);
+                return false;
+            }
+
+            if (!isValidEmail(email)) {
+                showSuccessMessage('Invalid email address.', false);
+                return false;
+            }
+
+           
+
+            showSuccessMessage('Signup Successful!', true);
+            return true;
+        }
+
+        function isValidEmail(email) {
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailRegex.test(email);
+        }
+    </script>
+    <footer>
+        <p>&copy; 2024 Kidzee.com All rights reserved.</p>
+        <div class="footer-social">
+            <p>Follow Us On:</p>
+            <a target="_blank" href="https://www.facebook.com/" class="social-icon"><img src="C:\Users\Saikiran Shet\OneDrive\Documents\kidzee\facebook_icon-icons.com_53612 (1).ico" alt="Facebook" height="30px" width="30px"></a>
+            <a target="_blank" href="https://twitter.com/?lang=en" class="social-icon"><img src="C:\Users\Saikiran Shet\OneDrive\Documents\kidzee\twitter.png" alt="Twitter"height="30px" width="30px"></a>
+            <a target="_blank" href="https://www.instagram.com/" class="social-icon"><img src="C:\Users\Saikiran Shet\OneDrive\Documents\kidzee\3721672-instagram_108066.ico" alt="Instagram" height="30px" width="30px"></a>
+            <a target="_blank" href="https://www.youtube.com/channel/UCPmNjl80kfcwrrjSYtB9Rng" class="social-icon"><img src="C:\Users\Saikiran Shet\OneDrive\Documents\kidzee\youtube.png" alt="youtube" height="30px" width="30px"></a>
+        </div>
+    </footer>
+</body>
+</html>

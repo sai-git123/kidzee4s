@@ -1,0 +1,312 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://static.vecteezy.com/system/resources/previews/006/644/884/original/blue-cloudy-sky-landscape-background-free-vector.jpg'); 
+    background-size:cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+   background-attachment: local;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+  }
+  .main-content
+{font-size: 20px;
+  width: 1200px;
+  margin: 50px auto; 
+    padding: 20px;
+    border: none; 
+    font-size: 30px;
+    animation:fadeInUp 1s ease-out ;
+    margin-bottom: 10px;
+}
+.footer-social p {
+    margin-bottom: 5px;
+  }
+  
+  .social-icon {
+    margin-right: 10px;
+    width: 4px;
+    height: 4px;
+  }
+  
+  .copyright {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  footer
+  {
+    text-align: center;
+  }
+  
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+  }
+  
+  .img1
+  {
+  padding: 2px;
+  transition-duration: 0.3s;
+  padding-left:100px;
+  padding-bottom: 20px;
+  }
+  .img1:hover{
+  transform: scale(1.2);
+  }
+  header {
+  padding-top: 30px;
+  padding: 20px 0;
+  padding-right: 50px;
+  }
+  
+  header nav {
+  float: right;
+  margin-top: 10px;
+  padding-right: 20px;
+  padding-top: 30px;
+  
+  }
+  
+  header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  
+  }
+  
+  header nav ul li {
+  display: inline;
+  margin: 0 10px;
+  
+  
+  }
+  
+  header nav ul li a {
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.3s ;
+  font-family: cursive;
+  }
+  
+  header nav ul li a:hover{
+  color: aliceblue;
+  }
+  
+  .buttons
+  {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  padding-right: 120px;
+  
+  }
+  
+  .a {
+    padding: 10px 20px; 
+    border:none;
+    transition: 0.3s; 
+    background-color: none;
+    }
+
+  .b {
+  padding: 10px 20px;
+  border:none;
+  transition: 0.3s; 
+  background-color: none;
+  }
+
+  .c {
+  padding: 10px 20px; 
+  border:none;
+  transition: 0.3s; 
+  background-color: none;
+  }
+
+  .d {
+  padding: 10px 20px; 
+   border:none;
+  transition: 0.3s; 
+  background-color: none;
+  }
+
+  .e {
+    padding: 10px 20px; 
+    background-color:rgb(153, 184, 228);
+    scale: 1.2;
+    border: 1px solid black;
+  }
+  .a:hover {
+
+    transform: scale(1.3); 
+    background-color:rgb(10, 1, 47);
+  }
+  
+  .b:hover {
+    background-color:rgb(10, 1, 47);
+  transform: scale(1.3); 
+  
+  }
+  .c:hover {
+    background-color:rgb(10, 1, 47);
+  transform: scale(1.3);
+  }
+  
+  .d:hover {
+    background-color:rgb(10, 1, 47);
+  transform: scale(1.3);
+  
+  }
+ 
+
+  .container {
+    padding: 20px;
+  }
+  
+  .container .form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+  }
+  
+  .container .form.signin,
+  .container.signinForm .form.signup {
+    display: none;
+  }
+  
+
+  
+  .container .form h2 {
+    color: black;
+    font-weight: 700; 
+    letter-spacing: 0.2em; 
+    background-color: wheat;
+    padding: 10px 20px;
+  }
+  
+  .container .form .inputBox {
+    position:relative;
+    width: 600px;
+  }
+  
+  .container .form .inputBox input {
+    padding: 15px 10px 15px 58px; 
+    border: none;
+    width: 100%;
+    background: #b6dcff; 
+    color:black;
+    font-weight: 400;
+     transition: 0.3s;
+    font-size: 1.2em; 
+    box-shadow: -8px -8px 20px rgba(255, 255, 255, 0.1),
+      8px 8px 20px rgba(0, 0, 0, 0.4);
+    transition: 0.5s;
+    outline: none;
+  }
+  .container .form .inputBox input:hover{
+      scale: 1.14;
+  }
+  
+  .container .form .inputBox span {
+    position: absolute;
+    left: 0;
+    padding: 15px 10px 15px 58px; 
+    pointer-events: none;
+    font-size: 1.2em; 
+    transition: 0.5s;
+    letter-spacing: 0.1em; 
+    color: black; 
+    margin-bottom: 20px;
+  }
+  
+  .container .form .inputBox i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 15px; 
+    width: 30px; 
+    color: #000000; 
+  }
+  
+  .container .form .inputBox input:valid ~ span,
+  .container .form .inputBox input:focus ~ span {
+    color: #000000;
+    border: 1px solid black; 
+    background:white;
+    transform: translateX(30px) translateY(-7px);
+    font-size: 1em; 
+    padding: 0 10px;
+    letter-spacing: 0.15em; 
+  }
+  
+  
+  .container .form .inputBox input[type="submit"] {
+    background: #ff0000;
+    color: white; 
+    padding: 15px 0; 
+    font-weight: 700; 
+    cursor: pointer;
+  
+  }
+  
+  .container .form p {
+    color: rgba(255, 255, 255, 0.7); 
+    font-size: 0.9em; 
+    font-weight: 400; 
+  }
+  
+  .container .form p a {
+    font-weight: 600; 
+    color:black;
+  }
+  
+  #overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); 
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  #success-modal {
+    background-color: #fff;
+    padding: 30px; 
+    border-radius: 10px; 
+    text-align: center;
+    position: relative;
+  }
+  
+  #success-icon {
+    color: #00cc99; 
+    font-size: 60px; 
+    margin-bottom: 20px;
+  }
+  
+  #success-message {
+    color: #00cc99; 
+    font-weight: bold;
+    font-size: 24px; 
+    margin-bottom: 20px;
+  }

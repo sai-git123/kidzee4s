@@ -1,0 +1,474 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://static.vecteezy.com/system/resources/previews/006/644/884/original/blue-cloudy-sky-landscape-background-free-vector.jpg'); 
+    background-size:cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+   background-attachment: local;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+  }
+  .main-content
+{font-size: 20px;
+  width: 1200px;
+  margin: 50px auto; 
+    padding: 20px;
+    border: none; 
+    font-size: 30px;
+    animation:fadeInUp 1s ease-out ;
+    margin-bottom: 10px;
+}
+.footer-social p {
+    margin-bottom: 5px;
+  }
+  
+  .social-icon {
+    margin-right: 10px;
+    width: 4px;
+    height: 4px;
+  }
+  
+  .copyright {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  footer
+  {
+    text-align: center;
+  }
+  
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+  }
+  
+  .img1
+  {
+  padding: 2px;
+  transition-duration: 0.3s;
+  padding-left:100px;
+  padding-bottom: 20px;
+  }
+  .img1:hover{
+  transform: scale(1.2);
+  }
+  header {
+  padding-top: 20px;
+  padding: 20px 0;
+  padding-right: 50px;
+  }
+  
+  header nav {
+  float: right;
+  margin-top: 10px;
+  padding-right: 20px;
+  padding-top: 30px;
+  
+  }
+  
+  header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  
+  }
+  
+  header nav ul li {
+  display: inline;
+  margin: 0 10px;
+  
+  
+  }
+  
+  header nav ul li a {
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.3s ;
+  font-family: cursive;
+  }
+  
+  header nav ul li a:hover{
+  color: aliceblue;
+  }
+  
+  .buttons
+  {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  padding-right: 120px;
+ 
+  
+  }
+  
+  .a {
+  padding: 10px 20px; 
+  background-color:rgb(153, 184, 228);
+  border: 1px solid black;
+ 
+  }
+  .b {
+  padding: 10px 20px;
+  border:none;
+  transition: 0.3s; 
+  background-color: none;
+  }
+
+  .c {
+  padding: 10px 20px; 
+  border:none;
+  transition: 0.3s; 
+  background-color: none;
+  }
+
+  .d {
+  padding: 10px 20px; 
+   border:none;
+  transition: 0.3s; 
+  background-color: none;
+  }
+
+  .e {
+    padding: 10px 20px; 
+  
+    transition: 0.3s; 
+    border:none;
+    background-color: none;
+  }
+  
+  
+  .b:hover {
+    background-color:rgb(10, 1, 47);
+  transform: scale(1.3); 
+  
+  }
+  .c:hover {
+    background-color:rgb(10, 1, 47);
+  transform: scale(1.3);
+  }
+  
+  .d:hover {
+    background-color:rgb(10, 1, 47);
+  transform: scale(1.3);
+  
+  }
+  .e:hover {
+    background-color:rgb(10, 1, 47);
+  transform: scale(1.3);
+  
+  }
+  
+
+
+  
+  
+  .just-checking 
+   {
+        background-color: rgb(235, 254, 255);
+        margin-top: 50px;
+        margin-bottom: 100px;
+        
+    }
+  
+  
+  .safer 
+   { 
+       width: 450px;
+       height: 450px; 
+       display: inline-block;
+       margin-top: 75px;
+              
+              
+    }
+  
+  .heading-safer
+   {
+       width: 630px;
+       font-size: 60px;
+       font-weight: 600;
+       margin-bottom: 25px;
+       display: inline-block;
+       margin-top: 75px;
+    }
+  
+  .heading-content 
+   {
+        width: 630px;
+        font-size: 18px;
+        font-weight: 300;
+        margin-top: 0px; 
+        display: inline-block;
+    }
+  
+  .heading-preview
+   {
+      width: 649px;
+      display: inline-block;
+      margin-left: 200px;
+      vertical-align: top;
+      height: 600px;
+              
+    }
+  
+
+    
+  
+  .photo
+   {
+      display: inline-block;
+      width: 650px;
+    } 
+  
+  .reviews
+   {
+      margin-left: 20px;
+      font-size: 20px;
+      font-weight: 200px;
+      display: inline-block;
+      margin-top: 30px;
+      width: 400px;
+      vertical-align: top;
+    } 
+    .reviews1
+   {
+      margin-left: 20px;
+      font-size: 20px;
+      font-weight: 200px;
+      display: inline-block;
+      margin-top: 30px;
+      width: 400px;
+      vertical-align: top;
+    } 
+    
+  
+    .letsee {
+      font-size: 50px;
+      vertical-align: top;
+    }
+  
+   
+  .whole
+   {
+      margin-left: 200px;
+    }
+  
+  .heading
+   {
+      text-align: center;
+      margin-top: 50px;
+    }
+  
+  .header-container 
+   {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-left: 200px;
+      margin-right: 200px;
+    }
+  
+  .main-image 
+   {
+      width: 350px;
+      font-size: 30px;
+      font-weight: bolder;
+    }
+  
+  .main-para
+   {
+      width: 350px;
+      font-size: 25px;
+    }
+        
+    .main-work 
+    {
+       width: 300px;
+       display: inline-block;
+      margin: 90px 90px;
+     }
+        
+  .put-it-on
+   {
+      margin-top: 50px;
+    }
+  
+  .line-container 
+   {
+      text-align: center;
+      margin-top: 50px;
+    }
+  
+  .line
+   {
+      width: 50%;
+      margin: 0 auto;
+      border: 1px solid #000;
+    }
+          
+  .feature-image
+   {
+      width: 300px;
+      display: inline-block;
+      margin-left: 150px;
+      margin-top: 40px;
+      vertical-align: top;
+      margin-left: 300px;
+    }
+  
+  .our-team
+   {
+       margin-top: 50px;
+       margin-left: 150px;
+       font-size: 22px;
+       font-weight: 900;
+    }
+  
+  .section-team
+   {
+      margin-left: 200px;
+      margin-top: 50px;
+    }
+  
+  .team-member
+   {
+      display: inline-block;
+      width: 45%; 
+      margin-left: 0px;
+      vertical-align: top;
+      box-sizing: border-box;
+    }
+  
+  .member-image
+   {
+      width: 250px; 
+      height: 300px; 
+    }
+  
+  .member-detail
+   {
+      text-align: left;
+      margin-top: 10px;
+    }
+  
+  .member-name
+   {
+      font-weight: bold;
+    }
+  
+  .member-position
+   {
+      font-style: italic;
+      margin-top: 5px;
+    }
+  
+  .member-description
+   {
+      margin-top: 10px;
+      width: 350px;
+    }
+  
+  .testimonial-container
+   {
+      display: inline-block;
+      width: 45%; 
+      margin: 20px;
+      vertical-align: top;
+    }
+  
+  .rating
+   {
+      font-size: 24px;
+      color: #971212; 
+    }
+  
+  .testimonial-content 
+   {
+      margin-top: 10px;
+    }
+  
+  .client-name
+   {
+      font-weight: bold;
+      margin-top: 10px;
+    }  
+        
+  .client-review
+   {
+      margin-left: 0px;
+      margin-top: 50px;
+      text-align: center;
+      height: 500px;
+     
+      
+    }
+    .review-name{
+      color: rgb(73, 160, 120);
+    }
+    .our-service{
+      font-size: 50px;
+      margin-top: 60px;
+      margin-left: 70px;
+     }
+     .main-heading {
+      font-size: 35px;
+      font-weight: 400;
+     }
+     .our-names{
+      font-size: 35px;
+     }
+     .para-us{
+      font-size: 25px;
+     }
+     
+  
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+  
+  .feature-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-left: 150px;
+    margin-top: 40px;
+  }
+  
+  .our-names {
+    font-size: 35px;
+    margin-top: 50px;
+    margin-left: 150px;
+  }
+  
+  .para-us {
+    font-size: 25px;
+  }
+  
+  .review-name {
+    color: rgb(73, 160, 120);
+  }
+  
+  .our-service {
+    font-size: 50px;
+    margin-top: 60px;
+    margin-left: 70px;
+  }
+  
+  .main-heading {
+    font-size: 35px;
+    font-weight: 400;
+  }
